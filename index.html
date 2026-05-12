@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <link href="https://fontshare.com[]=clash-grotesk@200,300,400,500,600,700&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.googleapis.com" rel="stylesheet">
 </head>
 <style>
+    body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        /* Makes fonts look crisp on Mac/Chrome */
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Ensure headings and buttons inherit it too */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    span button,
+    input,
+    p {
+        font-family: 'Inter', sans-serif;
+    }
+
+
     @font-face {
         font-family: Clash Grotesk;
         /* set name */
@@ -21,10 +41,35 @@
         width: 100%;
         min-width: 100vh;
         height: 100%;
-        
+
 
     }
-    body{
+
+    #circle {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        border-radius: 50%;
+    }
+
+    #d {
+        width: 100px;
+        height: 100px;
+        background-color: goldenrod;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    #rect {
+
+        width: 100px;
+        height: 100px;
+        background-color: green;
+
+
+    }
+
+    body {
         background-color: #F2F0E6;
     }
 
@@ -96,67 +141,455 @@
         left: 135px;
 
     }
-    #below h1{
-        font-family: Inter;
-    font-weight: 600;
-    font-style: Semi Bold;
-    font-size: 84px;
 
-    line-height: 90px;
-    letter-spacing: -2%;
+    #below h1 {
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 84px;
+
+        line-height: 90px;
+        letter-spacing: -2%;
 
     }
 
     #below p {
-       font-family: Inter;
-font-weight: 500;
-font-style: Medium;
-font-size: 20px;
-leading-trim: NONE;
-line-height: 30px;
-letter-spacing: -0.5%;
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+
+        line-height: 30px;
+        letter-spacing: -0.5%;
 
 
     }
-    #top h4{
+
+    #top h4 {
         font-family: 'Clash Grotesk', sans-serif;
         font-size: 17px;
     }
-    #top{
+
+    #top {
         display: flex;
         align-items: center;
-        
+
     }
-    #star{
+
+    #star {
         width: 36px;
-        height:36px;
+        height: 36px;
     }
-    #section-photo{
+
+    #section-photo {
         position: absolute;
         top: 100px;
         right: 150px;
     }
-    #section-1{
+
+    #section-1 {
         display: flex;
         align-items: center;
     }
-    #divider{
+
+    #divider {
         background-color: black;
         display: flex;
+
         align-items: center;
         justify-content: space-between;
         height: 100px;
     }
-    #divider img{
+
+    #divider img {
         height: 80px;
     }
-    #divider div{
+
+    #divider div {
         color: white;
-        
+    }
+
+    #service-top span {
+        margin-top: 50px;
+        position: relative;
+        left: 5px;
+        background-color: #FC7F3A;
+        border-radius: 50px;
+        height: 40px;
+        width: 120px;
+        color: white;
+    }
+
+    #service-section {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #service-div-container {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .service-div {
+        height: 521px;
+        background-color: #EBE9DE;
+        flex-direction: column;
+
+        width: 370px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .service-div p,
+    h2,
+    img,
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+    }
+
+    .service-div img {
+        width: 200px;
+        height: 200.5px;
+        margin-left: 70px;
+    }
+
+    #span-btn-1 {
+        color: white;
+        background-color: #389B48;
+        width: 170px;
+        height: 50px;
+        margin-top: 40px;
+        position: absolute;
+        left: 200px;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+    }
+
+    #span-btn-2 {
+        color: white;
+        background-color: #389B48;
+        width: 170px;
+        height: 50px;
+        margin-top: 40px;
+        position: absolute;
+        left: 850px;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+    }
+
+    #span-btn-3 {
+        color: white;
+        background-color: #389B48;
+        width: 170px;
+        height: 50px;
+        margin-top: 40px;
+        position: absolute;
+        right: 200px;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+    }
+
+    #works-top {}
+
+    #works {
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #works-div-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 818px;
+        width: 970px;
+
+    }
+
+    .works-div {
+
+        height: 521px;
+        align-self: flex-start;
+        flex-direction: column;
+        padding-top: 0px;
+        width: 470px;
+        padding: 15px;
+
+
+    }
+
+    .works-div span {
+
+
+        border: 1px solid black;
+        width: 150px;
+        border-radius: 30px;
+    }
+
+    #rect-image-work-1 {
+        width: 470px;
+        height: 422px;
+    }
+
+    #rect-image-work-2 {
+        width: 470px;
+        height: 282px;
+
+    }
+
+    #works-div-content h3 {
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 22px;
+
+        line-height: 17px;
+        letter-spacing: -2%;
+
+    }
+
+    #works-div-content p {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 17px;
+
+        line-height: 15px;
+        letter-spacing: -2%;
+
+    }
+
+    #works-div-content {
+        margin-top: 30px;
+    }
+
+    #works-top span {
+        background-color: #458DC9;
+        color: white;
+
+
+        width: 74px;
+        height: 34px;
+
+        border-radius: 17px;
+
+    }
+
+    #view-all-btn {
+        width: 168px;
+        height: 57px;
+        border-radius: 0px;
+        background-color: #FFBB38;
+        color: black;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+        align-self: end;
+    }
+
+    #pricing {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #price-div-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #price-bottom-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .price-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 370px;
+        height: 608px;
+        background-color: #EBE9DE;
+        border-radius: 5px;
+    }
+
+    .price-div span {
+        background-color: #FFBB38;
+        color: black;
+        width: 308px;
+        height: 55px;
+        font-family: Sporting Grotesque;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 16px;
+
+        line-height: 30px;
+        letter-spacing: -3%;
+        text-transform: uppercase;
+
+        border-radius: 8px;
+    }
+
+    #price-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 370px;
+        height: 608px;
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    #price-div span {
+        background-color: #FC7F3A;
+        color: black;
+        width: 308px;
+        height: 55px;
+        font-family: Sporting Grotesque;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -3%;
+        text-transform: uppercase;
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        border-radius: 8px;
+    }
+
+    ul {
+        list-style-type: "✓ ";
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    #separation {
+        margin-top: 150px;
+        width: 100%;
+        height: 635px;
+        background-color: #64E379;
+
+
+    }
+
+    #separation-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    #man-img {
+        margin-top: 50px;
+        height: 453px;
+
+    }
+
+    #img-container {
+        width: 377px;
+        height: 453px;
+
+
+    }
+
+    #separation-right {
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 24px;
+
+        line-height: 36px;
+        letter-spacing: 0%;
+
+    }
+
+    #img-container-updates {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    #updates {
+        margin-top: 150px;
+    }
+
+    .updates-div-content h3 {
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 22px;
+        line-height: 17px;
+        letter-spacing: -2%;
+    }
+
+    .updates-div-content p {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 17px;
+        line-height: 15px;
+        letter-spacing: -2%;
+    }
+
+    .updates-div-content {
+        margin-top: 30px;
+    }
+
+    #latest-news-section {
+        background-color: #FFC80A;
+        height: 387px;
+    }
+
+    #latest-news-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 150px;
+    }
+
+    #thank-you-divider {
+        background-color: black;
+        height: 100px;
+    }
+    #footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #lower-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
     }
 </style>
 
 <body>
+
     <div id="main-container">
         <header>
             <nav id="header">
@@ -182,7 +615,7 @@ letter-spacing: -0.5%;
                     </p>
                 </div>
                 <input type="text" placeholder="Your email address">
-                <button style="background-color: #FFBB38;">Request Access</button>
+                <button style="background-color:  #FFBB38;">Request Access</button>
 
             </div>
             <div id=right-section>
@@ -198,14 +631,18 @@ letter-spacing: -0.5%;
 
         <section id="divider">
 
-           <div id="left">
+            <div id="left">
                 <h2>GET ACCESS NOW!</h2>
-               
-           </div>
+
+            </div>
             <img src="image-fBLQvAFN1-transformed 2.png" alt="">
-           <div id="middle"> <h2>GET ACCESS NOW!</h2></div>
+            <div id="middle">
+                <h2>GET ACCESS NOW!</h2>
+            </div>
             <img src="image-fBLQvAFN1-transformed 2.png" alt="">
-           <div id="right"><h2>GET ACCESS NOW!</h2></div>
+            <div id="right">
+                <h2>GET ACCESS NOW!</h2>
+            </div>
             <img src="image-fBLQvAFN1-transformed 2.png" alt="">
 
 
@@ -213,11 +650,308 @@ letter-spacing: -0.5%;
 
         <section id="service-section">
 
-            <div class=""></div>
+            <div id="service-top">
+                <span>Services</span>
+                <h1>How Hirex. Work</h1>
+                <p>The awesome people who makes <br> all this possible</p>
+            </div>
+            <div id="service-div-container">
+                <div class="service-div">
+                    <p>START HERE</p>
+                    <h2>Who we are & <br> what we do</h2>
+                    <img src="man.png" alt="">
+                    <span id="span-btn-1">START HERE</span>
+                </div>
+                <div class="service-div">
+                    <p>CUSTOM DESIGN</p>
+                    <h2>We’ll design <br>your projects</h2>
+                    <img src="green-man.png" alt="">
+                    <span id="span-btn-2">START HERE</span>
+                </div>
+                <div class="service-div">
+                    <p>CONTACT US</p>
+                    <h2>Drop us your <br> message!</h2>
+                    <img src="Fortnite_Two Color 1.png" alt="">
+                    <span id="span-btn-3">START HERE</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="works">
+
+            <div id="works-top" style="display: flex; flex-direction: column; align-items: center;">
+                <span>Works</span>
+                <h1>Find our latest works</h1>
+                <p>The awesome people who makes <br> all this possible</p>
+            </div>
+            <div id="works-div-container">
+                <div class="works-div">
+                    <img id="rect-image-work-1" src="Rectangle 13.png" alt="">
+                    <div id="works-div-content">
+                        <span>Web Design</span>
+                        <h3>Website Design For Digital Agency</h3>
+                        <p>Build a unique Website with HireX Template</p>
+                        <span>Read More-></span>
+                    </div>
+                </div>
+                <div class="works-div">
+                    <img id="rect-image-work-2" src="Rectangle 13(1).png" alt="">
+                    <div id="works-div-content">
+                        <span style="font-family: 'Inter', sans-serif;">3D Design</span>
+                        <h3 style="font-family: 'Inter', sans-serif;">Realistic 3d Model of Living Room</h3>
+                        <p style="font-family: 'Inter', sans-serif;">Build a unique Website with HireX Template</p>
+                        <span>Read More-></span>
+                    </div>
+                    <span id="view-all-btn">View All-></span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="pricing">
+
+            <div id="price-div-container">
+                <div id="price-top" style="margin-bottom: 70px;">
+                    <h1 style="font-family: 'Inter', sans-serif;">Plans & Pricing</h1>
+                    <p style="font-family: 'Inter', sans-serif;">The awesome people who makes <br> all this possible</p>
+                </div>
+
+                <div id="price-bottom-div">
+                    <div class="price-div">
+                        <div>
+                            <h3 style="font-family: 'Inter', sans-serif;">FREE</h3>
+                        </div>
+                        <div>
+                            <h1 style="font-family: 'Inter', sans-serif;">$0 / month</h1>
+                        </div>
+                        <div>
+                            <p style="font-family: 'Inter', sans-serif;">Start free while you learn more about <br>our
+                                services!</p>
+                        </div>
+                        <div><img src="Line 6.png" alt=""></div>
+                        <div>
+                            <ul style="font-family: 'Inter', sans-serif;">
+                                <li>Free forever get the basic essentials</li>
+                                <li>Advanced security and performance</li>
+                                <li>Unlimited unhosted sites</li>
+                                <li>Live support</li>
+                            </ul>
+                        </div>
+                        <span onclick="mesg0()">GET STARTED</span>
+                    </div>
+                    <div style="margin-top: -40px;" id="price-div">
+                        <div>
+                            <h3>Basic</h3>
+                        </div>
+                        <div>
+                            <h1>$19 / month</h1>
+                        </div>
+                        <div>
+                            <p>Get powerful tools to make your <br> business grow</p>
+                        </div>
+                        <div><img src="Line 6.png" alt=""></div>
+                        <div>
+                            <ul style="font-family: 'Inter', sans-serif;">
+                                <li>Free forever get the basic essentials</li>
+                                <li>Advanced security and performance</li>
+                                <li>Unlimited unhosted sites</li>
+                                <li>Live support</li>
+                            </ul>
+                        </div>
+                        <span onclick="mesg()">GET STARTED</span>
+                    </div>
+                    <div class="price-div">
+                        <div>
+                            <h3>PRO</h3>
+                        </div>
+                        <div>
+                            <h1>$99 / month</h1>
+                        </div>
+                        <div>
+                            <p>Take your business to the next level <br> with our tools</p>
+                        </div>
+                        <div><img src="Line 6.png" alt=""></div>
+                        <div>
+                            <ul style="font-family: 'Inter', sans-serif;">
+                                <li>Free forever get the basic essentials</li>
+                                <li>Advanced security and performance</li>
+                                <li>Unlimited unhosted sites</li>
+                                <li>Live support</li>
+                            </ul>
+                        </div>
+                        <span onclick="mesg()" style="background-color:  #389B48;">GET STARTED</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="separation">
+
+            <div id="separation-container">
+                <div id="img-container">
+                    <img id="man-img" src="Rectangle 17.png" alt="">
+                    <span
+                        style="border:2px solid black;background-color: #FFBB38;height:55px; width: 187px; margin-left: 100px; border-radius: 27.5px;">@mase.place
+                        <img src="Ellipse 7.png" alt=""><img src="ArrowUpRight.png" alt="">
+                    </span>
+                </div>
+                <div id="separation-right">
+                    <h3>"We select to practice in Minerva since it is both <br> useful, and our clients basically adore
+                        it! It has <br>stood the test of time and proceeds"</h3>
+                    <p>Abel Carden is a TikTok personality and lip-sync content creator who has <br> built a fanbase of
+                        more than 3.2 million followers on the platform.
+                    </p>
+                </div>
+
+            </div>
+
 
 
 
         </section>
+
+
+        <section id="updates">
+
+            <span
+                style="position: absolute; left: 340px; background-color:  #FC6868; width: 70px; height: 34px; border-radius: 17px;color: white;">Blog</span>
+            <h1>Stay updated</h1>
+
+            <div id="img-container-updates">
+
+                <div id="updates-div">
+                    <img style="width:570px;height:353px;" id="rect-image-work-1" src="Rectangle 19.png" alt="">
+                    <div class="updates-div-content">
+                        <span>Web Design</span>
+                        <h3>Website Design For Digital Agency</h3>
+                        <p>Build a unique Website with HireX Template</p>
+                        <span>Read More-></span>
+                    </div>
+                </div>
+                <div id="updates-div">
+                    <img style="width:570px;height:353px;" id="rect-image-work-1" src="Rectangle 20.png" alt="">
+                    <div class="updates-div-content">
+                        <span>Web Design</span>
+                        <h3>Website Design For Digital Agency</h3>
+                        <p>Build a unique Website with HireX Template</p>
+                        <span>Read More-></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="latest-news-section" style="margin-top: 150px;">
+            <div id="latest-news-container">
+                <div id="left-news" style="margin-top: 50px;">
+                    <h1>Get our latests news & updates</h1>
+                    <h3>NAME</h3>
+                    <img src="Line 7.png" alt="">
+                    <h3>EMAIL</h3>
+                    <img src="Line 7.png" alt="">
+                    <h3>SUBSCRIBE</h3>
+                    <img src="Line 7.png" alt="">
+                </div>
+                <div id="right-news" style="margin-top: 50px;">
+                    <p>We select to practice in Minerva since it is both useful and <br>commonsense, and our clients
+                        basically adore it</p>
+                    <span style="border: 1px solid black; border-radius: 20px; width: 150px;height:30px;">Book a
+                        Call</span>
+                </div>
+            </div>
+        </section>
+        <section id="thank-you-divider">
+            <div id="thank-you-msg"
+                style="color:white; display: flex;align-items: center; justify-content: center; gap: 40px;">
+                <h1>THANK YOU FOR YOUR VISIT</h1>
+                <img src="Line 4.png" alt="">
+                <h1>THANK YOU FOR YOUR VISIT</h1>
+                <img src="Group 59.png" alt="">
+                <h1>THANK YOU FOR YOUR VISIT</h1>
+            </div>
+        </section>
+
+        <footer style="height: 634px;">
+            <div id="footer-container">
+            <div id="upper-footer">
+                <h1>HireX.</h1>
+            </div>
+            <img src="Line 10.png" alt="">
+            <div id="lower-footer" >
+                <div class="lower-footer-div">
+                   
+                    <ul style="list-style-type:none;">
+                        <li style="font-size: small;">Products</li>
+                        <li></li>
+                        <li>Platform</li>
+                        <li>Store Overview</li>
+                        <li>Email Reports</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div>
+                <div class="lower-footer-div">
+                    
+                    <ul style="list-style-type:none;">
+                        <li style="font-size: small;">Resources</li>
+                        <li></li>
+                        <li>Product Guides</li>
+                        <li>Reports</li>
+                        <li>Blog</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="lower-footer-div">
+                    
+                    <ul style="list-style-type:none;">
+                        <li style="font-size: small;">Company</li>
+                        <li></li>
+                        <li>Careers</li>
+                        <li>Contact Support</li>
+                        <li>Contact Sales</li>
+                    </ul>
+                </div>
+                <div class="lower-footer-div">
+                    
+                    <ul style="list-style-type:none;">
+                        <li style="font-size: small;">Partners</li>
+                        <li></li>
+                        <li>Partner With Us</li>
+                    
+                    </ul>
+                </div>
+            </div>
+            <div id="terms" style="display: flex; justify-content: center;align-items: center; gap: 600px;">
+                    <p>Terms and Conditions Privacy Policy</p>
+                    <p>©HIREX, Inc. 2026</p>
+            </div>
+       
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div id="circle"></div>
+        <div id="d"></div>
+        <div id="rect"></div> -->
+
+
+
+
+
+
 
 
     </div>
@@ -225,5 +959,13 @@ letter-spacing: -0.5%;
 
 
 </body>
+<script>
+    function mesg(){
+        alert("abe gareeb chal phut!!!")
+    }
+    function mesg0(){
+        alert("")
+    }
+</script>
 
 </html>
